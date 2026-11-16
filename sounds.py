@@ -2,6 +2,6 @@ from pygame import mixer
 
 def load_sounds(keys):
     sounds = {}
-    for key, filename in key.items():
-        sounds[key] = mixer.Sound(f"assets/sound/{filename}")
+    for key, filename in keys.items():
+        sounds[key] = mixer.Sound(f"assets/sounds/{filename}")
     return sounds
